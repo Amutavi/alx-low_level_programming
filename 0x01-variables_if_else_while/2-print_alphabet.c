@@ -2,7 +2,7 @@
 /**
 * main - outputs alphabet
 *
-* return: Always (0) succcess
+* Return: Always (0) succcess
 */
 int main(void)
 {
