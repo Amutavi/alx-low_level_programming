@@ -14,7 +14,7 @@ l = n % 10;
 if (l < 0)
 {
 _putchar(-l + 48);
- return (-l);
+return (-l);
 }
 else
 {
