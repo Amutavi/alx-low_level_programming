@@ -8,7 +8,7 @@ int main(void)
 {
 char base;
 
-for (base = '0'; base = '9'; base++)
+for (base = '0'; base <= '9'; base++)
 putchar(base);
 
 for (base = 'a'; base <= 'f'; base++)
