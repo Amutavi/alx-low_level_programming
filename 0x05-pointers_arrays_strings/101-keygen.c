@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-*main - generates keygen.
-*Return: 0 Always
+* main - generates keygen.
+* Return: 0 Always.
 */
 int main(void)
 {
