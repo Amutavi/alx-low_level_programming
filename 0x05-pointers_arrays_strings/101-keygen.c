@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-*main - convert a string to an integer.
+*main - generates keygen.
 *Return: 0 Always
 */
 int main(void)
