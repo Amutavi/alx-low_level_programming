@@ -6,7 +6,7 @@
 *Return: char with copy of string
 */
 
-char *_strcopy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 int i;
 
