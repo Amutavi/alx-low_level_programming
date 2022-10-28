@@ -1,35 +1,27 @@
 #include "main.h"
-
 /**
- * _atoi - encodes a string using rot13.
- * @s: input string.
- * Return: integer.
- */
-int _atoi(char *s)
+*rot13 - encodes a string using rot13.
+*@s: input string.
+*Return: the pointer to dest.
+*/
+
+char *rot13(char *s)
 {
-unsigned int count = 0, size = 0, oi = 0, pn = 1, m = 1, i;
+int count = 0, i;
+char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
 while (*(s + count) != '\0')
 {
-if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
-break;
-
-if (*(s + count) == '-')
-pn *= -1;
-
-if ((*(s + count) >= '0') && (*(s + count) <= '9'))
+for (i = 0; i < 52; i++)
 {
-if (size > 0)
-m *= 10;
-size++;
+if (*(s + count) == alphabet[i])
+{
+*(s + count) = rot13[i];
+break;
+}
 }
 count++;
 }
-
-for (i = count - size; i < count; i++)
-{
-oi = oi + ((*(s + i) - 48) * m);
-m /= 10;
-}
-return (oi *pn);
+return (s);
 }
