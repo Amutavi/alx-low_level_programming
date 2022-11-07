@@ -1,1 +1,2 @@
-README.md
+#!/bin/bash
+Static libraries
