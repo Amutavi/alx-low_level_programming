@@ -38,9 +38,9 @@ char *_copy(char *src)
 
 /**
  * new_dog - creates a new dog variable
- * @name: Nmae of the dog
+ * @name: Name of the dog
  * @age: Age of the dog
- * @owner: owner of the dog
+ * @owner: Owner of the dog
  * Return: Pointer to new dog variable
  */
 
@@ -49,9 +49,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *snoopie;
 		char *new_name, *new_owner;
 
-	if (name == NULL  || owner == NULL)
+	if (name == NULL || owner == NULL)
 	{
 	return (NULL);
+	}
+	snoopie  = malloc(sizeof(dog_t));
+	if (snoopie == NULL)
+	{
+		return (NULL);
 	}
 
 new_name = _copy(name);

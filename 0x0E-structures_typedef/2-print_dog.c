@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_dog -  prints a struct dog
+ * print_dog -  prints a dog
  *
  * @d: dog to print
  *
@@ -15,7 +15,7 @@ void print_dog(struct dog *d)
 	if (d->name == 0)
 		printf("Name: (nil)\n");
 	else
-		printf("Nmae: %s\n", d->name);
+		printf("Name: %s\n", d->name);
 	printf("Age: %f\n", d->age);
 	if (d->owner == 0)
 		printf("Owner: (nil)\n");
